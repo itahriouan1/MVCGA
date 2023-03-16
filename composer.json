@@ -1,0 +1,17 @@
+{
+    "name": "zakariaitahriouan/mvcga",
+    "authors": [
+        {
+            "name": "itahriouan zakaria",
+            "email": "zakariaitahriouan@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "lib\\DB\\": "lib/DB/",
+            "src\\Entity\\": "src/Entity/",
+            "src\\Repository\\": "src/Repository/"
+        }
+    },
+    "require": {}
+}
