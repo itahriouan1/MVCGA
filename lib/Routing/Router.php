@@ -16,6 +16,14 @@ class Router {
                 }
             }
         }
+        else{
+            foreach($Routes as $route){
+                if('/'==$route->action){
+                    $controllerString = $route->Controller;
+                }
+            }
+
+        }
         if($controllerString==""){
             echo 'Route not found';
         }

@@ -6,5 +6,9 @@
     {
         "action":"supprimer_personne",
         "Controller": "PersonneController::delete"
+    },
+    {
+        "action":"/",
+        "Controller": "DefaultController::index"
     }
 ]

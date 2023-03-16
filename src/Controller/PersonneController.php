@@ -11,5 +11,11 @@ class PersonneController {
         $personnes = $personneRepository->findAll();
         var_dump($personnes);
     }
+    public function delete(){
+        $personneRepository = new personneRepository();
+        $personne = $personneRepository->findById(1);
+        $personneRepository->delete($personne);
+        
+    }
 
 }
