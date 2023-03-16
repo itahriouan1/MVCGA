@@ -14,7 +14,13 @@ class personne{
             $this->nom = func_get_arg(0);
             $this->prenom = func_get_arg(1);
             $this->email = func_get_arg(2);
-        }        
+        }   
+        if(func_num_args()==4){
+            $this->id = func_get_arg(0);
+            $this->nom = func_get_arg(1);
+            $this->prenom = func_get_arg(2);
+            $this->email = func_get_arg(3);
+        }     
     }
     
 

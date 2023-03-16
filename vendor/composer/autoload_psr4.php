@@ -8,5 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'src\\Repository\\' => array($baseDir . '/src/Repository'),
     'src\\Entity\\' => array($baseDir . '/src/Entity'),
+    'src\\Controller\\' => array($baseDir . '/src/Controller'),
+    'lib\\Routing\\' => array($baseDir . '/lib/Routing'),
     'lib\\DB\\' => array($baseDir . '/lib/DB'),
 );

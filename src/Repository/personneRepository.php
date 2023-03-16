@@ -29,6 +29,18 @@ class personneRepository {
             die();
         }
     }
+    public function findById($id){
+        try{
+        $pdo = $this->pdo;
+        $stm = $pdo->prepare("select * from personne where id=?");
+        $stm->execute([$id]);
+        $personnes = $stm->fetchAll(PDO::FETCH_CLASS, 'src\Entity\personne');
+        return $personnes[0];
+        }catch(\PDOException $e){
+            echo $e->getMessage();
+            die();
+        }
+    }
     public function create(personne $personne){
         try{
             var_dump($personne);
@@ -41,4 +53,33 @@ class personneRepository {
             die();
         }
     }
+    public function delete(Personne $personne){
+        try{
+            
+        $pdo = $this->pdo;
+        $stm = $pdo->prepare("delete from personne where id=?");
+        $stm->execute([$personne->getId()]);
+        }catch(\PDOException $e){
+            echo $e->getMessage();
+            die();
+    }
+}
+    public function update(Personne $personne){
+        try{
+            
+        $pdo = $this->pdo;
+        $stm = $pdo->prepare("update personne 
+        set nom=?,
+        prenom=?,
+        email=?
+        where id=?");
+        $stm->execute([$personne->getNom(), $personne->getPrenom(), $personne->getEmail(), $personne->getId()]);
+        }catch(\PDOException $e){
+            echo $e->getMessage();
+            die();
+        }
+
+}
+    
+
 }

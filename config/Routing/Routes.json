@@ -1,0 +1,10 @@
+[
+    {
+        "action":"afficher_personne",
+        "Controller": "PersonneController::show"
+    },
+    {
+        "action":"supprimer_personne",
+        "Controller": "PersonneController::delete"
+    }
+]
