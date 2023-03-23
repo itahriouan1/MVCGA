@@ -12,7 +12,8 @@
             "src\\Entity\\": "src/Entity/",
             "src\\Repository\\": "src/Repository/",
             "lib\\Routing\\": "lib/Routing/",
-            "src\\Controller\\": "src/Controller/"
+            "src\\Controller\\": "src/Controller/",
+            "lib\\View\\": "lib/View/"
         } 
     },
     "require": {}
