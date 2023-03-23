@@ -12,4 +12,5 @@ return array(
     'lib\\View\\' => array($baseDir . '/lib/View'),
     'lib\\Routing\\' => array($baseDir . '/lib/Routing'),
     'lib\\DB\\' => array($baseDir . '/lib/DB'),
+    'lib\\Controller\\' => array($baseDir . '/lib/Controller'),
 );

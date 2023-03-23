@@ -10,5 +10,14 @@
     {
         "action":"/",
         "Controller": "DefaultController::index"
+    },
+    {
+        "action":"ajouter_personne",
+        "Controller": "PersonneController::create"
+    },
+    {
+        "action":"modifier_personne",
+        "Controller": "PersonneController::update"
     }
+
 ]

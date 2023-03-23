@@ -13,7 +13,8 @@
             "src\\Repository\\": "src/Repository/",
             "lib\\Routing\\": "lib/Routing/",
             "src\\Controller\\": "src/Controller/",
-            "lib\\View\\": "lib/View/"
+            "lib\\View\\": "lib/View/",
+            "lib\\Controller\\": "lib/Controller/"
         } 
     },
     "require": {}
